@@ -1,0 +1,47 @@
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.App_Layout{
+
+    font-family: 'PixelFont', sans-serif;
+    display: flex; 
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    border-radius: 3px; 
+    border-style: solid;
+    
+
+    height: 100%;
+    width: 100%;
+
+
+
+
+
+}
+
+.App_Body{
+
+    display: flex; 
+    flex-direction: row;
+    flex-grow: 1;
+
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('C:\users\dave8\file-sorter-app\assets\Fonts\PixelifySans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

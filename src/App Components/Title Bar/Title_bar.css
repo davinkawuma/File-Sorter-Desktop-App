@@ -1,0 +1,111 @@
+
+
+.Top_Panel{
+
+    display: flex; 
+    flex-direction: row;
+
+    font-family: 'PixelFont', sans-serif;
+
+    border-style: solid;
+    border-width: 4px; 
+
+
+    top: 30px;
+    padding-left: 2%;
+    height: 100px;
+    font-size: 20px;
+    color:rgba(245, 245, 245, 0.774);
+    background-color: rgb(54, 155, 121);
+
+    flex-grow: 1;
+
+    gap: 60px; 
+
+
+}
+.Progress_Bar{
+    position: fixed;
+   
+    top: 30px;
+    left: 40%;
+
+}
+
+
+
+.Progress_Bar {
+    position: absolute;
+
+    width: 224px;
+    height: 32px;
+    image-rendering: pixelated;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url('C:/users/dave8/file-sorter-app/pixel_assets/top panel progress bar.png');
+    
+
+}
+
+.progress-bar-fill {
+    position: relative;
+    width: 216px;
+    height: 24px;  
+    image-rendering: pixelated;
+    top: 4px;
+    left: 4px;
+
+    background-size: cover;
+    background-image: url('C:/users/dave8/file-sorter-app/pixel_assets/progress_over_fill.png');
+
+}
+
+.animateFillBar {
+    animation: fillBar 2s linear forwards;
+}
+
+@keyframes fillBar {
+
+    from{
+
+        width:0%;
+    }
+    to{
+
+        width:216px;
+    }
+
+}
+
+.loading-text {
+    font-size: medium;
+    animation: blink 2s steps(2, start) infinite;
+
+    padding-top: 26px; 
+
+
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.FileImg{
+
+    background-image: url('C:\users\dave8\file-sorter-app\pixel_assets\File Icon.png');
+    background-size: cover;
+    height: 128px;
+    width: 128px;
+    image-rendering: pixelated;
+
+}
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('C:\users\dave8\file-sorter-app\assets\Fonts\PixelifySans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

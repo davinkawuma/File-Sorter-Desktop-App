@@ -1,0 +1,10 @@
+.Frame_For_Window{
+    background-color: rgb(0, 0, 2);
+    height: 25px;
+    
+
+}
+.window-controls{
+    top: 1px;
+    padding-left: 80%;
+}

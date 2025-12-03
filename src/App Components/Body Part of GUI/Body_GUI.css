@@ -1,0 +1,127 @@
+.Source_Folder{
+
+    background-image: url('C:\users\dave8\file-sorter-app\pixel_assets\bodygui_background.png');
+    
+    font-family: 'PixelFont', sans-serif;
+
+    height: 100%; 
+
+    gap: 10px; 
+
+    display: flex; 
+    flex-direction: column;
+
+    background-size: cover;
+    image-rendering: pixelated;
+    flex-grow: 4;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 5px; 
+
+    padding-left: 20px;
+
+    color:rgba(245, 245, 245, 0.774);
+
+
+}
+
+.begin_processButton {
+
+    font-family: 'PixelFont', sans-serif;
+
+    width: 85px;
+    height: 85px;
+
+    background-color: rgb(98, 229, 58);
+    border: solid;
+
+    border-width: 2px; 
+    border-radius: 50%; 
+
+    border-color:rgb(177, 227, 162);
+    cursor: pointer;
+
+    animation: onBeginClick;
+}
+
+.begin_processButton:hover {
+    background-color: rgba(98, 229, 58, 0.753);
+    border-color: white;
+
+}
+
+.begin_processButton:active {
+  background-color: rgb(70, 180, 40); /* darker green when pressed */
+}
+
+
+.folderContainer-beginButton{
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+
+}
+.FolderName-container{
+
+    padding: 20px; 
+    border-radius: 2px; 
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+    height: 120px;
+
+    color:rgba(10, 9, 9, 0.774);
+
+    display: flex; 
+    flex-direction: column;
+
+    overflow-y: auto;
+
+ 
+    gap: 4px;
+
+    background-color: rgb(126, 80, 20);
+}
+
+.FolderNames-divs{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid; 
+    background-color:rgb(98, 229, 58);
+
+    cursor: pointer;
+
+    display: flex; 
+    gap: 4px;
+
+    padding-left: 2px;
+
+    height: 20px;
+    width: 200px;
+
+    transition: background-color 1s ease, border-color .5s ease, border-width .5s ease; 
+}
+
+.FolderNames-divs:hover {
+    border-color: white;
+    border-width: 4px;
+    background-color: aquamarine;
+
+}
+
+.folderIcons{
+    padding-top: 4px;
+    height: 10px; 
+    width: 12px;
+}
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('C:\users\dave8\file-sorter-app\assets\Fonts\PixelifySans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
